@@ -14,7 +14,7 @@ TF = (9 / 5) * TC + 32
 public class Main {
     public static void main(String[] args) {
        Scanner scan=new Scanner(System.in);
-       System.out.println("Температура в градусах Цельсия:");
+       System.out.print("Температура в градусах Цельсия: ");
        double TC=scan.nextInt();
        double TF=9.0/5.0*TC+32;
        System.out.println("Температура по Фаренгейту: "+TF);
