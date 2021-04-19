@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /* 
 ВНИМАНИЕ! ДЛЯ РЕШЕНИЯ ЗАДАЧИ НЕОБХОДИМО ПРОСМОТРЕТЬ УРОК №4 https://www.youtube.com/watch?v=WmZ6kVTlWtg&list=PLOep0pi-UBExIxCNegkvCrBuDh0TE7Ihq&index=4
@@ -10,6 +9,8 @@ TF = (9 / 5) * TC + 32
 на вход подается значение 41.
 Пример вывода:
 105.8 */
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
