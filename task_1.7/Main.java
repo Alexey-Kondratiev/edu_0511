@@ -14,11 +14,11 @@ public class Main {
         Scanner scan=new Scanner(System.in);
         System.out.println("Размеры бассейна в метрах:");
         System.out.print("длина:   ");
-        double a=scan.nextInt();
+        double a=scan.nextDouble();
         System.out.print("ширина:  ");
-        double b=scan.nextInt();
+        double b=scan.nextDouble();
         System.out.print("глубина: ");
-        double c=scan.nextInt();
+        double c=scan.nextDouble();
         System.out.println("Для наполнения бассейна нужно ");
         System.out.println(a*b*c*1000+" литров воды");
     }
