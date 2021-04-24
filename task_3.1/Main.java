@@ -9,9 +9,8 @@
 
 public class Main {
     public static int min(int a, int b, int c) {
-        int min;
+        int min=b;
         if(a<b) min=a;
-        else min=b;
         if(c<min) min=c;
         return min;
     }
