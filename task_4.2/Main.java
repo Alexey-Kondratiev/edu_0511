@@ -13,7 +13,6 @@ import Main.java.Dog;
 •	У класса должен быть геттер для переменной age.
 */
 
-
 public class Main {
     public static void main(String[] args) {
     Dog dog=new Dog();
@@ -21,7 +20,6 @@ public class Main {
     dog.setAge(5);
     System.out.println("Кличка:  "+dog.getName());
     System.out.println("Возраст: "+dog.getAge()+" лет");
-
     }
 }
     
