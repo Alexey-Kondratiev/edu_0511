@@ -1,5 +1,3 @@
-package Main.java;
-
 import Main.java.Dog;
 
 /*
