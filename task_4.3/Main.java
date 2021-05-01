@@ -32,14 +32,14 @@ class Cat {
         
         int n1=0;
         int n2=0;
-        if(this.age>anotherCat.age) n1++;
-        if(this.age<anotherCat.age) n2++;
+        if(this.age>anotherCat.age) n1++; // При равенстве показателей
+        if(this.age<anotherCat.age) n2++; // общий счёт не меняется
         if(this.weight>anotherCat.weight) n1++;
         if(this.weight<anotherCat.weight) n2++;
         if(this.strength>anotherCat.strength) n1++;
         if(this.strength<anotherCat.strength) n2++;
-        if(n1>n2) return true;
-        else return false;       
+        if(n1>n2) return true; // Наш кот победил
+        else return false;     // Наш кот не смог победить 
         
     }
 }
