@@ -4,6 +4,6 @@ public class Horse extends Animal {
     }
     
     public void run() {
-        System.out.println("Игого, я поскакал(а)");
+        System.out.println(speak+", я поскакал(а)");
     }    
 }
