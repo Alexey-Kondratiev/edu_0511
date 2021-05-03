@@ -6,11 +6,12 @@
 Создать объект пегаса и вызвать метод fly();
 */
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
     Horse mustang=new Horse("Игого",(byte) 4); 
     Pegasus ares=new Pegasus("Игого", (byte) 4);
     mustang.run();
     ares.fly();
+    
     }
 }
