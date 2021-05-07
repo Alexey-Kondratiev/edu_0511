@@ -17,7 +17,7 @@ public class Main {
 
 interface Animal {
 
-//    Color
+      void Color();
       void getColor();
 }
     
