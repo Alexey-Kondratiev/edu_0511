@@ -15,14 +15,13 @@ public class Main {
     }
 }
 
-interface Animal {  
+interface Animal {
 
 //    Color
       void getColor();
-
 }
     
-class Fox implements Animal {
+abstract class Fox implements Animal {
 
     String name;
     
@@ -32,9 +31,5 @@ class Fox implements Animal {
 
     public static String getName() {
         return "Fox";
-    }
-    
-    public void getColor() {
-    }
-    
+    }        
 }
