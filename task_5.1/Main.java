@@ -20,9 +20,8 @@ public class Main {
         
         for(int i=0;i<names.size();i++) {
             for(int j=1;j<names.size();j++){
-                if(i!=j && names.get(i)==names.get(j)) {
+                if(i!=j && names.get(i)==names.get(j))
                 names.remove(names.get(j));
-                }
             }
         }
         System.out.println(names);
