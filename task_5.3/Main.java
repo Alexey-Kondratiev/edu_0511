@@ -11,9 +11,9 @@ public class Main {
         ArrayList<Integer> nums1=new ArrayList<>();
         ArrayList<Integer> nums2=new ArrayList<>();
         for(int i=1;i<=20;i++) {
-        n=(int)(Math.random()*20)-5;
-        nums1.add(n);
-        if(n>0 && n<10) nums2.add(n);
+            n=(int)(Math.random()*20)-5;
+            nums1.add(n);
+            if(n>0 && n<10) nums2.add(n);
         }
     System.out.println(nums1);
     System.out.println(nums2);
