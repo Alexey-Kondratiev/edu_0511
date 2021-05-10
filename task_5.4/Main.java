@@ -33,12 +33,10 @@ public class Main {
 //      Создание списка объектов для записи:
 
         ArrayList<Integer> nums0= new ArrayList<>();        
-        System.out.println("Введите целые числа:");
+        System.out.println("/nВведите целые числа:");
         while (true) {
             String s=scan.nextLine();
-            if (s.isEmpty()) {
-            break;
-            }
+            if (s.isEmpty()) break;
             nums0.add(Integer.parseInt(s));
         }
         scan.close();
