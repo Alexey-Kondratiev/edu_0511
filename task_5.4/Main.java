@@ -48,9 +48,7 @@ public class Main {
                     
 //      Десериализация в список:       
         ArrayList<Integer> nums=new ArrayList<>();
-
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));
-
         nums=((ArrayList<Integer>)ois.readObject());
         ois.close();
 
