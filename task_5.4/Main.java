@@ -30,10 +30,9 @@ public class Main {
         System.out.println("Введите путь к файлу и его имя:");
         String filename = scan.nextLine();
         
-// Создание списка объектов для записи
+//      Создание списка объектов для записи:
 
-        ArrayList<Integer> nums0= new ArrayList<>();
-        
+        ArrayList<Integer> nums0= new ArrayList<>();        
         System.out.println("Введите целые числа:");
         while (true) {
             String s=scan.nextLine();
@@ -44,20 +43,20 @@ public class Main {
         }
         scan.close();
         
-//      Запись объекта в файл        
+//      Запись объекта в файл:      
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename));
             oos.writeObject(nums0);
             oos.close();
                     
-// Десериализация в список        
+//      Десериализация в список:       
         ArrayList<Integer> nums=new ArrayList<>();
 
-ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));
 
-nums=((ArrayList<Integer>)ois.readObject());
+        nums=((ArrayList<Integer>)ois.readObject());
         ois.close();
 
-//      Отбор чётных чисел              
+//      Отбор чётных чисел:              
         for(int i=0;i<nums.size();i++) {
             if(nums.get(i)%2!=0) {
                 nums.remove(i);
