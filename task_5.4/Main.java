@@ -29,14 +29,31 @@ public class Main {
         Scanner scan=new Scanner(System.in);
         System.out.println("Введите путь к файлу и его имя:");
         String filename = scan.nextLine();
+        
+// Создание списка объектов для записи
+        ArrayList<Integer> nums0= new ArrayList<>();
+        
+        System.out.println("Введите целые числа:");
+        while (true) {
+            String s=scan.nextLine();
+            if (s.isEmpty()) {
+            break;
+            }
+            nums0.add(Integer.parseInt(s));
+        }
         scan.close();
+        
+//      Запись объекта в файл        
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename));
+            oos.writeObject(nums0);
+            oos.close();
                     
-//      Десериализация в список  
-      
+// Десериализация в список        
         ArrayList<Integer> nums=new ArrayList<>();
 
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));
-        nums=((ArrayList<Integer>)ois.readObject());
+ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));
+
+nums=((ArrayList<Integer>)ois.readObject());
         ois.close();
 
 //      Отбор чётных чисел              
