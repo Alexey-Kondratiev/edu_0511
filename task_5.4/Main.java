@@ -31,6 +31,7 @@ public class Main {
         String filename = scan.nextLine();
         
 // Создание списка объектов для записи
+
         ArrayList<Integer> nums0= new ArrayList<>();
         
         System.out.println("Введите целые числа:");
