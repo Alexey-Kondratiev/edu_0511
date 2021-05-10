@@ -43,8 +43,8 @@ public class Main {
         
 //      Запись объекта в файл:      
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename));
-            oos.writeObject(nums0);
-            oos.close();
+        oos.writeObject(nums0);
+        oos.close();
                     
 //      Десериализация в список:       
         ArrayList<Integer> nums=new ArrayList<>();
